@@ -33,14 +33,33 @@ git push origin main
 git branch
 ```
 
-#   Как создать новую ветку
+##   Как создать новую ветку
 
 ```bash
 git branch new_branch
 ```
 
-# Как поменять ветку 
+## Как поменять ветку 
 
 ```bash
 git checkout new_branch
+```
+
+
+
+## Установка и настройка
+
+```bash
+git --version # Проверяем сть ли git и смотрим его версию
+git config --global user.name "your name" # настроить имя пользователя 
+git config --global user.email "your Email" #настроить почту пользователя
+git config --list # проверить ьекщие настройки git
+```
+
+## Работа с репозиториями 
+
+```bash
+git init #создать пустой репозиторий в текущей папке для дальнейшего отслеживания
+git clone URL # скопировать .git репозиторий по ссылке URL
+# Ссылка обычно представляет из себя
 ```
