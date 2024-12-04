@@ -16,12 +16,12 @@
 # else:
 #     print("Ошибка получения данных")
 
-import requests 
+# import requests 
 
-response = requests.get("htpps://apo.quotable.io/random")
+# response = requests.get("htpps://apo.quotable.io/random")
 
-if response.status_code == 200:
-    data = response.json()
-    print(f"Случайная цитата: '{data['content']}' - {data['author']}")
-else:
-    print("Не удалось получить цитату")
+# if response.status_code == 200:
+#     data = response.json()
+#     print(f"Случайная цитата: '{data['content']}' - {data['author']}")
+# else:
+#     print("Не удалось получить цитва")
