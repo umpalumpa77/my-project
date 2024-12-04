@@ -28,7 +28,7 @@
 
 import requests
 
-url = "htpps://jsonplaceholder.typicode.com/posts"
+url = "https://jsonplaceholder.typicode.com/posts"
 data = { 
     "title": "Hello, API!",
     "body": "This is a test post",
