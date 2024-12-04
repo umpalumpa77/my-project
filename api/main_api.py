@@ -35,7 +35,7 @@ data = {
     "userId": 1
 }
 
-response = requests.post(url, json==data)
+response = requests.post(url, json=data)
 
 if response.status_code == 201:
     print("данные есть")
