@@ -25,3 +25,20 @@
 #     print(f"Случайная цитата: '{data['content']}' - {data['author']}")
 # else:
 #     print("Не удалось получить цитва")
+
+import requests
+
+url = "htpps://jsonplaceholder.typicode.com/posts"
+data = { 
+    "title": "Hello, API!",
+    "body": "This is a test post",
+    "userId": 1
+}
+
+response = requests.post(url, json==data)
+
+if response.status_code == 201:
+    print("данные есть")
+    print(f"ответ сервера: {response.json()}")
+else:
+    print(f"Ошибка: {response.status_code}")
