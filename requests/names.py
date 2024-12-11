@@ -1,6 +1,6 @@
 import requests
 
-def get_guess_by_name(name):
+def get_guess_by_name():
 
     name = input("Введите имя для проверки ")
     params = {"name": name}
