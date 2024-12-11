@@ -28,7 +28,7 @@ def get_types(url):
     return resp_json[ans]
 
 def get_joke_by_type(url, type):
-    response = requests.get(f"{url}/jokes{type}/random")
+    response = requests.get(f"{url}jokes/{type}/random")
     resp_json = response.json()
     print(f"""
 Сетап: {resp_json[0]['setup']}
@@ -41,7 +41,7 @@ URL = "https://official-joke-api.appspot.com/"
 
 ans = ""
 while ans != "-":
-    get_types(URL)
+    type = get_types(URL)
     get_joke_by_type(URL, type)
     ans = input("нажми '-' чтобы выйти\n")
 
