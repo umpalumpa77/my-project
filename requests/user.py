@@ -27,7 +27,7 @@ def extract_user_info(data):
 
     return user_info
 
-def print_user_info_table(user_info):
+def get_user_info_table(user_info):
     table = PrettyTable()
     table.field_names = ["Имя", "Пол", "Возраст", "Email", "Страна"]
 
@@ -43,7 +43,7 @@ def main():
     if data:
         print(f"\nПолучены данные о {num_users} пользователях: ")
         user_info = extract_user_info(data)
-        print_user_info_table(user_info=user_info)
+        print(get_user_info_table(user_info=user_info))
     else:
         print("не удалось получить данные о API")
 
