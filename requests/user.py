@@ -17,7 +17,7 @@ def get_random_user_data(num_users=5):
 def extract_user_info(data):
     user_info = []
 
-    for user in data[results]:
+    for user in data[requests]:
         name = f"{user['name']['first']} {user['name']['last']}"
         gender = f"{user['gender']}"
         email = f"{user['email']}"
