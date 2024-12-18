@@ -17,7 +17,7 @@ def get_random_user_data(num_users=5):
 def extract_user_info(data):
     user_info = []
 
-    for user in data[requests]:
+    for user in data['results']:
         name = f"{user['name']['first']} {user['name']['last']}"
         gender = f"{user['gender']}"
         email = f"{user['email']}"
@@ -37,7 +37,7 @@ def get_user_info_table(user_info):
     return table
 
 def main():
-    num_users = int(input("Введите кол-во пользовталей для получения"))
+    num_users = int(input("Введите кол-во пользовталей для получения: "))
     data = get_random_user_data(num_users=num_users)
 
     if data:
