@@ -57,3 +57,6 @@ def main():
         print(get_weather_info_table(weather_info=weather_info))
     else:
         print("не удалось найти api ")
+
+if __name__ == "__main__":
+    main()
