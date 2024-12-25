@@ -28,7 +28,6 @@ def get_weather_data(city="Moscow", api_key=""):
 
     
 def extract_weather_info(data):
-    weather_info = []
 
     if data:
         city_name = data['name']
